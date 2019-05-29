@@ -64,7 +64,7 @@ dependencies {
 
     //UT
     api 'com.taobao.android:utdid4all:1.1.5.3_proguard@jar'
-    compile 'com.alibaba.mtl:app-monitor-sdk:2.5.1.3_for_bc_proguard@jar'
+    api 'com.alibaba.mtl:app-monitor-sdk:2.5.1.3_for_bc_proguard@jar'
 
     //电商SDK
     api 'com.alibaba.sdk.android:alibc_trade_sdk:3.1.1.11@aar'
