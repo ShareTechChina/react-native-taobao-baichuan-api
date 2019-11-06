@@ -7,7 +7,7 @@ package com.react.taobaobaichuanapi;
 import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.modules.core.DeviceEventManagerModule;
 import com.facebook.react.bridge.WritableMap;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 public class EventManager {
     private ReactContext reactContext;
