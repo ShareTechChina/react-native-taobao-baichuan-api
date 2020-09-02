@@ -46,26 +46,55 @@ allprojects {
 }
 
 dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
     implementation ("com.facebook.react:react-native:+")
     //登陆
     implementation 'com.ali.auth.sdk:alibabauth_core:2.0.0.6@aar'
     implementation 'com.ali.auth.sdk:alibabauth_ui:2.0.0.6@aar'
     implementation 'com.ali.auth.sdk:alibabauth_ext:2.0.0.6@aar'
     //安全组件
-    implementation 'com.taobao.android:securityguardaar3:5.4.171@aar'
-    implementation 'com.taobao.android:securitybodyaar3:5.4.99@aar'
-    implementation 'com.taobao.android:avmpaar3:5.4.36@aar'
-    implementation 'com.taobao.android:sgmiddletieraar3:5.4.9@aar'
+//    implementation 'com.taobao.android:securityguardaar3:5.4.171@aar'
+//    implementation 'com.taobao.android:securitybodyaar3:5.4.99@aar'
+//    implementation 'com.taobao.android:avmpaar3:5.4.36@aar'
+//    implementation 'com.taobao.android:sgmiddletieraar3:5.4.9@aar'
+    implementation files('libs/securityguardaar3-5.4.171.aar')
+    implementation files('libs/securitybodyaar3-5.4.99.aar')
+    implementation files('libs/avmpaar3-5.4.36.aar')
+    implementation files('libs/sgmiddletieraar3-5.4.9.aar')
     //Mtop
-    implementation 'com.taobao.android:mtopsdk_allinone_open:3.1.2.5@jar'
+//    implementation 'com.taobao.android:mtopsdk_allinone_open:3.1.2.5@jar'
+    implementation files('libs/mtopsdk_allinone_open-3.1.2.5.jar')
+
     //applink
-    implementation 'com.alibaba.sdk.android:alibc_link_partner:4.1.6@aar'
+//    implementation 'com.alibaba.sdk.android:alibc_link_partner:4.1.15@aar'
+    implementation files('libs/alibc_link_partner-4.1.15.aar')
+
     // 电商基础组件
-    implementation 'com.alibaba.sdk.android:AlibcTradeCommon:4.0.0.0@aar'
-    implementation 'com.alibaba.sdk.android:AlibcTradeBiz:4.0.0.0@aar'
-    implementation 'com.alibaba.sdk.android:nb_trade:4.0.0.0@aar'
+    implementation 'com.alibaba.sdk.android:AlibcTradeCommon:4.0.0.15@aar'
+    implementation 'com.alibaba.sdk.android:AlibcTradeBiz:4.0.0.15@aar'
+    implementation 'com.alibaba.sdk.android:nb_trade:4.0.0.15@aar'
     implementation 'com.alibaba:fastjson:1.2.41'
 
+//    implementation ("com.facebook.react:react-native:+")
+//    //登陆
+//    implementation 'com.ali.auth.sdk:alibabauth_core:2.0.0.6@aar'
+//    implementation 'com.ali.auth.sdk:alibabauth_ui:2.0.0.6@aar'
+//    implementation 'com.ali.auth.sdk:alibabauth_ext:2.0.0.6@aar'
+//    //安全组件
+//    implementation 'com.taobao.android:securityguardaar3:5.4.171@aar'
+//    implementation 'com.taobao.android:securitybodyaar3:5.4.99@aar'
+//    implementation 'com.taobao.android:avmpaar3:5.4.36@aar'
+//    implementation 'com.taobao.android:sgmiddletieraar3:5.4.9@aar'
+//    //Mtop
+//    implementation 'com.taobao.android:mtopsdk_allinone_open:3.1.2.5@jar'
+//    //applink
+//    implementation 'com.alibaba.sdk.android:alibc_link_partner:4.1.6@aar'
+//    // 电商基础组件
+//    implementation 'com.alibaba.sdk.android:AlibcTradeCommon:4.0.0.0@aar'
+//    implementation 'com.alibaba.sdk.android:AlibcTradeBiz:4.0.0.0@aar'
+//    implementation 'com.alibaba.sdk.android:nb_trade:4.0.0.0@aar'
+//    implementation 'com.alibaba:fastjson:1.2.41'
 }
 
 
